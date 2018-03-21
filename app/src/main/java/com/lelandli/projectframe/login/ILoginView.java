@@ -6,5 +6,5 @@ package com.lelandli.projectframe.login;
 
 public interface ILoginView {
     void showData(LoginEntity loginEntity);
-    void onFaulure(Throwable throwable);
+    void onFaulure(String errorStr);
 }

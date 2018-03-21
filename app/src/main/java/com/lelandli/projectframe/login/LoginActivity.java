@@ -30,7 +30,7 @@ public class LoginActivity extends BaseActivity implements ILoginView{
     }
 
     @Override
-    public void onFaulure(Throwable throwable) {
+    public void onFaulure(String errorStr) {
 
     }
 }

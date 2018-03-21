@@ -26,6 +26,6 @@ public class LoginPresenter implements ILoginPresenter{
     @Override
     public void onFaulure(Throwable throwable) {
         //可以处理逻辑
-        iLoginView.onFaulure(throwable);
+        iLoginView.onFaulure("");
     }
 }
