@@ -15,17 +15,20 @@ public class LoginPresenter implements ILoginPresenter{
     @Override
     public void doLogin(String name, String passwd) {
         //请求数据
+        iLoginView.showProgressBar();
         iLoginModel.getLoginData(name,passwd);
     }
 
     @Override
     public void onSuccess(LoginEntity loginEntity) {
+        iLoginView.hideProgressBar();
         iLoginView.showData(loginEntity);
     }
 
     @Override
     public void onFaulure(Throwable throwable) {
         //可以处理逻辑
+        iLoginView.hideProgressBar();
         iLoginView.onFaulure("");
     }
 }

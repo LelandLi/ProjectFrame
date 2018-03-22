@@ -7,4 +7,6 @@ package com.lelandli.projectframe.login;
 public interface ILoginView {
     void showData(LoginEntity loginEntity);
     void onFaulure(String errorStr);
+    void showProgressBar();
+    void hideProgressBar();
 }

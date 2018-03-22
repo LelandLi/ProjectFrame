@@ -1,5 +1,7 @@
 package com.lelandli.projectframe.login;
 
+import android.util.Log;
+
 import com.lelandli.projectframe.base.BaseActivity;
 
 /**
@@ -32,5 +34,15 @@ public class LoginActivity extends BaseActivity implements ILoginView{
     @Override
     public void onFaulure(String errorStr) {
 
+    }
+
+    @Override
+    public void showProgressBar() {
+        Log.i("LJL","显示progress");
+    }
+
+    @Override
+    public void hideProgressBar() {
+        Log.i("LJL","隐藏progress");
     }
 }
